@@ -1,0 +1,19 @@
+name: Build and test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  macos:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run file-operation tests
+        run: bash test.sh
+      - name: Build universal app
+        run: bash build.sh "$RUNNER_TEMP/release"
+      - name: Verify app architectures and signature
+        run: |
+          lipo -archs "$RUNNER_TEMP/release/ExplorerMac.app/Contents/MacOS/ExplorerMac"
+          codesign --verify --deep --strict "$RUNNER_TEMP/release/ExplorerMac.app"
