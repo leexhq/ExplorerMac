@@ -3,7 +3,7 @@
 一个接近 Windows 11 文件资源管理器布局的 macOS 原生应用。界面为中文，使用 Swift、AppKit、SwiftUI、Image I/O 和系统 Quick Look；无需安装 Python、Node.js 或其他运行环境。
 
 [![Build and test](https://github.com/leexhq/ExplorerMac/actions/workflows/ci.yml/badge.svg)](https://github.com/leexhq/ExplorerMac/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: GPL-3.0-or-later OR AGPL-3.0-or-later](https://img.shields.io/badge/License-GPL--3.0--or--later%20OR%20AGPL--3.0--or--later-blue.svg)](LICENSE)
 
 > 本项目是独立开发的软件，与 Microsoft 或 Apple 无隶属关系。
 
@@ -113,4 +113,4 @@ bash build.sh
 
 ## 许可证
 
-本项目使用 [MIT License](LICENSE)。
+本项目可选择 [GPL-3.0-or-later 或 AGPL-3.0-or-later](LICENSE)；另可与版权所有者协商专有商业许可证。此前已经按 MIT 发布的副本仍保留原有 MIT 权利。
